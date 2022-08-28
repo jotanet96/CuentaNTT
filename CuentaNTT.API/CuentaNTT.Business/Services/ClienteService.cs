@@ -21,6 +21,9 @@ namespace CuentaNTT.Business.Services {
             _cuentaService = new CuentaService(cuentaRepository, loggerCuenta);
         }
 
+        public ClienteService(IClienteRepository clienteRepository) {
+            _clienteRepository = clienteRepository;
+        }
         public async Task<IEnumerable<Cliente>> GetClientesAsync() {
             _logger.LogInformation($"[ClienteService] Inicio de método: {MethodBase.GetCurrentMethod().Name}");
 
@@ -31,28 +34,29 @@ namespace CuentaNTT.Business.Services {
             return clientes;
         }
 
+
         public async Task<Cliente> GetClienteByIdAsync(int id) {
-            _logger.LogInformation($"[ClienteService] Inicio de método: {MethodBase.GetCurrentMethod().Name}");
-
             Cliente cliente = await _baseRepository.GetByIdAsync(id);
-
-            _logger.LogInformation($"[ClienteService] Fin de método: {MethodBase.GetCurrentMethod().Name}");
 
             return cliente;
         }
 
+
+        public async Task<Cliente> GetClienteByPersonaIdAsync(int idPersona) {
+            Cliente cliente = await _clienteRepository.GetClienteByPersonaIdAsync(idPersona);
+
+            return cliente;
+        }
+
+
         public async Task<Cliente> GetClienteByUsername(string username) {
-            _logger.LogInformation($"[ClienteService] Inicio de método: {MethodBase.GetCurrentMethod().Name}");
 
             Cliente cliente = await _clienteRepository.GetByUsername(username);
-
-            _logger.LogInformation($"[ClienteService] Fin de método: {MethodBase.GetCurrentMethod().Name}");
 
             return cliente;
         }
 
         public async Task<Cliente> AddClienteAsync(Cliente cliente) {
-            _logger.LogInformation($"[ClienteService] Inicio de método: {MethodBase.GetCurrentMethod().Name}");
 
             HashedPassword hashedPassword;
             var lst = await _baseRepository.GetAllAsync();
@@ -79,14 +83,11 @@ namespace CuentaNTT.Business.Services {
             cliente.Salt = hashedPassword.Salt;
 
             var clienteNuevo = await _baseRepository.AddAsync(cliente);
-
-            _logger.LogInformation($"[ClienteService] Fin de método: {MethodBase.GetCurrentMethod().Name}");
             
             return clienteNuevo;
         }
 
         public async Task<bool> UpdateClienteAsync(Cliente cliente) {
-            _logger.LogInformation($"[ClienteService] Inicio de método: {MethodBase.GetCurrentMethod().Name}");
             
             Cliente _cliente = await _baseRepository.GetByIdAsync(cliente.Id);
             
@@ -96,14 +97,11 @@ namespace CuentaNTT.Business.Services {
             cliente.Salt = _cliente.Salt;
             
             var clienteActualizado = await _baseRepository.UpdateAsync(cliente);
-            
-            _logger.LogInformation($"[ClienteService] Fin de método: {MethodBase.GetCurrentMethod().Name}");
-            
+                        
             return clienteActualizado;
         }
 
         public async Task<bool> DeleteClienteAsync(int id) {
-            _logger.LogInformation($"[ClienteService] Inicio de método: {MethodBase.GetCurrentMethod().Name}");
             
             Cliente _cliente = await _baseRepository.GetByIdAsync(id);
 
@@ -121,9 +119,7 @@ namespace CuentaNTT.Business.Services {
             _cliente.Estado = false;
 
             var cuentaEliminado = await _baseRepository.UpdateAsync(_cliente);
-            
-            _logger.LogInformation($"[ClienteService] Fin de método: {MethodBase.GetCurrentMethod().Name}");
-            
+                        
             return cuentaEliminado;
         }
     }

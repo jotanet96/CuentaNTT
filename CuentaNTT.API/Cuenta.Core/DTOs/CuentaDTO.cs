@@ -5,8 +5,6 @@
         public string TipoCuenta { get; set; }
         public double SaldoInicial { get; set; }
         public bool Estado { get; set; }
-
-        //Hereda
-        public int PersonaId { get; set; }
+        public int ClienteId { get; set; }
     }
 }

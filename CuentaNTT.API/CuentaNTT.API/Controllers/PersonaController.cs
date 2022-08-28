@@ -40,7 +40,9 @@ namespace CuentaNTT.API.Controllers {
             try {
 
                 var persona = await _personaService.GetPersonaByIdentificacionAsync(identificacion);
-
+                if (persona == null) {
+                    return BadRequest(Constants.OBJECTISNULL);
+                }
                 ApiResponse<PersonaDTO> res = new();
                 res.Data = _mapper.Map<PersonaDTO>(persona);
 
@@ -71,7 +73,9 @@ namespace CuentaNTT.API.Controllers {
         [HttpPost]
         public async Task<IActionResult> AddPersonaAsync(PersonaDTO personaDTO) {
             try {
-
+                if (personaDTO == null) {
+                    return BadRequest(Constants.OBJECTISNULL);
+                }
                 ApiResponse<PersonaDTO> res = new();
                 var persona = _mapper.Map<Persona>(personaDTO);
                 Persona personaNuevo = await _personaService.AddPersonaAsync(persona);

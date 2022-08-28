@@ -16,6 +16,10 @@ namespace CuentaNTT.Business.Services {
             _baseRepository = baseRepository;
             _personaRepository = personaRepository;
         }
+        public PersonaService(IPersonaRepository personaRepository, ILogger<PersonaService> logger) {
+            _logger = logger;
+            _personaRepository = personaRepository;
+        }
 
         public async Task<IEnumerable<Persona>> GetPersonasAsync() {
             _logger.LogInformation($"[PersonaService] Inicio de método: {MethodBase.GetCurrentMethod().Name}");

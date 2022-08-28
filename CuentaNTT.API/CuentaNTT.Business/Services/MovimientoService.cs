@@ -19,6 +19,10 @@ namespace CuentaNTT.Business.Services {
             _movimientoRepository = movimientoRepository;
             _cuentaService = new CuentaService(cuentaRepository, loggerCuenta);
         }
+        public MovimientoService(IMovimientoRepository movimientoRepository, ILogger<MovimientoService> logger) {
+            _logger = logger;
+            _movimientoRepository = movimientoRepository;
+        }
 
         public async Task<IEnumerable<Movimiento>> GetMovimientosAsync() {
             _logger.LogInformation($"[MovimientoService] Inicio de método: {MethodBase.GetCurrentMethod().Name}");
@@ -44,22 +48,24 @@ namespace CuentaNTT.Business.Services {
         public async Task<Movimiento> AddMovimientoAsync(Movimiento movimiento) {
             _logger.LogInformation($"[MovimientoService] Inicio de método: {MethodBase.GetCurrentMethod().Name}");
             var _lstMovimientos = await _movimientoRepository.GetMovimientosByNumeroCuentaAsync(movimiento.CuentaId);
+            Movimiento movimientoNuevo;
 
             if (!_lstMovimientos.Any()) {
                 Cuenta _cuenta = await _cuentaService.GetCuentaByNumeroCuentaAsync(movimiento.CuentaId);
-                movimiento.Valor = movimiento.TipoMovimiento.Equals("Deposito", StringComparison.CurrentCultureIgnoreCase) ? (-1 * movimiento.Valor) : movimiento.Valor;
+                movimiento.Valor = movimiento.TipoMovimiento.Equals("Debito", StringComparison.CurrentCultureIgnoreCase) ? (-1 * movimiento.Valor) : movimiento.Valor;
                 double saldo = movimiento.Valor + _cuenta.SaldoInicial;
                 movimiento.Saldo = saldo;
                 if (saldo < 0) throw new BusinessException(Constants.NONAVAILABLEBALANCE);
+                movimientoNuevo = await _baseRepository.AddAsync(movimiento);
             } else {
                 Movimiento _movimiento = _lstMovimientos.Last();
-                movimiento.Valor = movimiento.TipoMovimiento.Equals("Deposito", StringComparison.CurrentCultureIgnoreCase) ? (-1 * movimiento.Valor) : movimiento.Valor;
+                movimiento.Valor = movimiento.TipoMovimiento.Equals("Debito", StringComparison.CurrentCultureIgnoreCase) ? (-1 * movimiento.Valor) : movimiento.Valor;
                 double saldo = movimiento.Valor + _movimiento.Saldo;
                 movimiento.Saldo = saldo;
                 if (saldo < 0) throw new BusinessException(Constants.NONAVAILABLEBALANCE);
+                movimientoNuevo = await _baseRepository.AddAsync(movimiento);
             }
 
-            Movimiento movimientoNuevo = await _baseRepository.AddAsync(movimiento);
             _logger.LogInformation($"[MovimientoService] Fin de método: {MethodBase.GetCurrentMethod().Name}");
             return movimientoNuevo;
         }

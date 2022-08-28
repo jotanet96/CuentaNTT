@@ -18,24 +18,5 @@ namespace CuentaNTT.Repository.Repositories {
             var movimientos = listOfMovimientos.Where(x => x.CuentaId == numeroCuenta).ToList();
             return (IEnumerable<Movimiento>)movimientos;
         }
-
-        public Task<IEnumerable<ReporteMovimiento>> GetMovimientosByFechaAsync(DateTime fechaInicio, DateTime fechaFin) {
-            /*
-             * Movimiento - Fecha
-             * Persona - Nombre
-             * Cuenta/Movimiento - Numero Cuenta
-             * Cuenta - TipCuenta/Tipo
-             * Cuenta - SaldoInicial
-             * Cuenta - Estado
-             * Movimiento - (Total Valor) byCuenta
-             * Movimiento - Saldo Disponible
-             */
-            /*
-            var listOfMovimientos = await _entities.ToListAsync();
-            var movimientos = listOfMovimientos.Where(x => x.Fecha == numeroCuenta).ToList();
-            return (IEnumerable<Movimiento>)movimientos;
-            */
-            return null;
-        }
     }
 }

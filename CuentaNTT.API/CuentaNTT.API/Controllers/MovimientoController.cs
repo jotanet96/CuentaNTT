@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Authorization;
 namespace CuentaNTT.API.Controllers {
     [ApiController]
     [Route("api/[controller]")]
-    [Authorize]
+    //[Authorize]
     public class MovimientoController : Controller {
 
         private readonly IMapper _mapper;

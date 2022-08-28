@@ -37,7 +37,7 @@ namespace CuentaNTT.API.Controllers {
                 //var usuario_ = await context.usuario.Where(u => u.Username == usuario.Sic_usu_username).FirstOrDefaultAsync();
 
                 if (usuario_ == null) { return NotFound(ErrorHelper.Response(404, "Usuario no encontrado.")); }
-                if (usuario_.Estado == true) { return NotFound(ErrorHelper.Response(404, "Usuario no encontrado.")); }
+                if (usuario_.Estado == false) { return NotFound(ErrorHelper.Response(404, "Usuario no encontrado.")); }
 
                 if (HashHelper.CheckHash(login.Contrasena, usuario_.Contrasena, usuario_.Salt)) {
                     var secretKey = _config.GetValue<string>("SecretKey");

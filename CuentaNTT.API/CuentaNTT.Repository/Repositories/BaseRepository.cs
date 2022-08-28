@@ -18,7 +18,7 @@ namespace CuentaNTT.Repository.Repositories {
         public async Task<IEnumerable<T>> GetAllAsync() {
             IEnumerable<T>? _lst = await _entities.ToListAsync();
 
-            if (!_lst.Any()) throw new NotFoundException(Constants.MULTIPLENOTFOUND);
+            //if (!_lst.Any()) throw new NotFoundException(Constants.MULTIPLENOTFOUND);
 
             return _lst;
         }

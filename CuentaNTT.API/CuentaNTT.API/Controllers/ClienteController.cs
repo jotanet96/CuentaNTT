@@ -4,6 +4,7 @@ using CuentaNTT.Core.Models;
 using CuentaNTT.Core.Response;
 using Microsoft.AspNetCore.Mvc;
 using CuentaNTT.Business.Interfaces;
+using NSubstitute;
 
 namespace CuentaNTT.API.Controllers {
     [ApiController]
@@ -12,13 +13,12 @@ namespace CuentaNTT.API.Controllers {
     public class ClienteController : Controller {
 
         private readonly IMapper _mapper;
-        private readonly IClienteService _clienteService;
-        
+        private readonly IClienteService _clienteService = Substitute.For<IClienteService>();
+
         public ClienteController(IClienteService clienteService, IMapper mapper) {
             _mapper = mapper;
             _clienteService = clienteService;
         }
-
 
         [HttpGet]
         public async Task<IActionResult> GetAllAsync() {
@@ -27,7 +27,9 @@ namespace CuentaNTT.API.Controllers {
                 ApiResponse<IEnumerable<ClienteDTO>> res = new();
                 var lstClientes = await _clienteService.GetClientesAsync();
                 res.Data = _mapper.Map<IEnumerable<ClienteDTO>>(lstClientes);
-
+                if (!lstClientes.Any()) {
+                    return BadRequest(Constants.MULTIPLENOTFOUND);
+                }
                 return Ok(res);
 
             } catch (Exception e) {
@@ -39,6 +41,9 @@ namespace CuentaNTT.API.Controllers {
         [HttpGet("ById/{id}", Name = "GetClienteByIdAsync")]
         public async Task<IActionResult> GetClienteByIdAsync(int id) {
             try {
+                if(id == 0) {
+                    return BadRequest(Constants.CLIENTNOTEXISTS);
+                }
 
                 var cliente = await _clienteService.GetClienteByIdAsync(id);
                 ApiResponse<ClienteDTO> res = new();

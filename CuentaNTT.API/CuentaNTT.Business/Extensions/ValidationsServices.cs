@@ -27,6 +27,8 @@ namespace CuentaNTT.Core.Extensions {
             services.AddTransient<ICuentaService, CuentaService>();
             services.AddTransient<ICuentaRepository, CuentaRepository>();
 
+            services.AddTransient<IReporteService, ReporteService>();
+
             return services;
         }
     }

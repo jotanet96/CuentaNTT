@@ -62,7 +62,7 @@ namespace CuentaNTT.Business.Services {
 
         public async Task<bool> UpdateCuentaAsync(Cuenta cuenta) {
             _logger.LogInformation($"[CuentaService] Inicio de método: {MethodBase.GetCurrentMethod().Name}");
-            Cuenta _cuenta = await _baseRepository.GetByIdAsync(cuenta.Id);
+            Cuenta _cuenta = await _cuentaRepository.GetCuentaByNumeroCuentaAsync(cuenta.NumeroCuenta);
             if (!_cuenta.Estado) throw new BusinessException(Constants.NOTFOUND);
 
             var cuentaActualizado = await _baseRepository.UpdateAsync(cuenta);

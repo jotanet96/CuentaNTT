@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CuentaNTT.Business", "Cuent
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CuentaNTT.Repository", "CuentaNTT.Repository\CuentaNTT.Repository.csproj", "{69F6B8D5-09A5-414C-B715-DD7CD82D52B2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CuentaNTT.Test", "CuentNTT.Test\CuentaNTT.Test.csproj", "{4432168C-F6C7-4D66-BADD-80087B1100D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{69F6B8D5-09A5-414C-B715-DD7CD82D52B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69F6B8D5-09A5-414C-B715-DD7CD82D52B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69F6B8D5-09A5-414C-B715-DD7CD82D52B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4432168C-F6C7-4D66-BADD-80087B1100D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4432168C-F6C7-4D66-BADD-80087B1100D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4432168C-F6C7-4D66-BADD-80087B1100D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4432168C-F6C7-4D66-BADD-80087B1100D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

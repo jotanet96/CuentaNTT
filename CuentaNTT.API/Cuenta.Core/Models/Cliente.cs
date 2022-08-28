@@ -19,7 +19,7 @@ namespace CuentaNTT.Core.Models {
         public string ClienteID { get; set; }//Usuario
         public string Contrasena { get; set; }
         public string Salt { get; set; }
-        public bool Estado { get; set; }
+        public bool Estado { get; set; } = true;
 
         //Hereda
         [ForeignKey("PersonaId")]

@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Authorization;
 namespace CuentaNTT.API.Controllers {
     [ApiController]
     [Route("api/[controller]")]
-    [Authorize]
+    //[Authorize]
 
     public class CuentaController : Controller {
 
@@ -85,6 +85,11 @@ namespace CuentaNTT.API.Controllers {
 
         [HttpPost]
         public async Task<IActionResult> AddCuentaAsync(CuentaDTO cuentaDTO) {
+
+            if (cuentaDTO == null) {
+                return BadRequest(Constants.OBJECTISNULL);
+            }
+            
             try {
                 ApiResponse<CuentaDTO> res = new();
                 var cuenta = _mapper.Map<Cuenta>(cuentaDTO);
@@ -104,6 +109,9 @@ namespace CuentaNTT.API.Controllers {
         [HttpPut]
         public async Task<IActionResult> UpdateCuentaAsync([FromBody] CuentaDTO cuentaDTO) {
             try {
+                if(cuentaDTO == null) {
+                    return BadRequest(Constants.OBJECTISNULL);
+                }
 
                 ApiResponse<bool> res = new();
                 var cuenta = _mapper.Map<Cuenta>(cuentaDTO);

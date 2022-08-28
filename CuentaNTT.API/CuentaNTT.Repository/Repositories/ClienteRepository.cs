@@ -15,11 +15,14 @@ namespace CuentaNTT.Repository.Repositories {
         }
 
         public async Task<Cliente> GetByUsername(string username) {
-            var _usuarios = _entities.Where(x => x.ClienteID == username && x.Estado == false);
-            if (_usuarios.Count() == 0) throw new Exception(Constants.CLIENTNOTEXISTS);
+            var _usuario = await _entities.Where(x => x.ClienteID == username && x.Estado == true).FirstOrDefaultAsync();
+            if (_usuario == null) throw new Exception(Constants.CLIENTNOTEXISTS);
 
-            var _usuario = await _usuarios.FirstAsync();
+            return _usuario;
+        }
 
+        public async Task<Cliente> GetClienteByPersonaIdAsync(int idPersona) {
+            var _usuario = await _entities.Where(x => x.PersonaId == idPersona && x.Estado == true).FirstOrDefaultAsync();
             if (_usuario == null) throw new Exception(Constants.CLIENTNOTEXISTS);
 
             return _usuario;
