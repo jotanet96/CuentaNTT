@@ -1,0 +1,17 @@
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\CuentaNTT.Business\obj\Debug\net6.0\CuentaNTT.Business.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\CuentaNTT.Business\obj\Debug\net6.0\CuentaNTT.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\CuentaNTT.Business\obj\Debug\net6.0\CuentaNTT.Business.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\CuentaNTT.Business\obj\Debug\net6.0\CuentaNTT.Business.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\CuentaNTT.Business\obj\Debug\net6.0\CuentaNTT.Business.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\CuentaNTT.Business\bin\Debug\net6.0\CuentaNTT.Business.deps.json
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\CuentaNTT.Business\bin\Debug\net6.0\CuentaNTT.Business.dll
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\CuentaNTT.Business\bin\Debug\net6.0\CuentaNTT.Business.pdb
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\CuentaNTT.Business\bin\Debug\net6.0\CuentaNTT.Core.dll
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\CuentaNTT.Business\bin\Debug\net6.0\CuentaNTT.Repository.dll
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\CuentaNTT.Business\bin\Debug\net6.0\CuentaNTT.Core.pdb
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\CuentaNTT.Business\bin\Debug\net6.0\CuentaNTT.Repository.pdb
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\CuentaNTT.Business\obj\Debug\net6.0\CuentaNTT.Business.csproj.CopyComplete
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\CuentaNTT.Business\obj\Debug\net6.0\CuentaNTT.Business.dll
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\CuentaNTT.Business\obj\Debug\net6.0\refint\CuentaNTT.Business.dll
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\CuentaNTT.Business\obj\Debug\net6.0\CuentaNTT.Business.pdb
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\CuentaNTT.Business\obj\Debug\net6.0\ref\CuentaNTT.Business.dll

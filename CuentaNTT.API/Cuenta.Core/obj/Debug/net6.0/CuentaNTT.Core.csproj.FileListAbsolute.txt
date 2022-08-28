@@ -1,0 +1,12 @@
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\Cuenta.Core\obj\Debug\net6.0\CuentaNTT.Core.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\Cuenta.Core\obj\Debug\net6.0\CuentaNTT.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\Cuenta.Core\obj\Debug\net6.0\CuentaNTT.Core.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\Cuenta.Core\obj\Debug\net6.0\CuentaNTT.Core.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\Cuenta.Core\obj\Debug\net6.0\CuentaNTT.Core.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\Cuenta.Core\bin\Debug\net6.0\CuentaNTT.Core.deps.json
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\Cuenta.Core\bin\Debug\net6.0\CuentaNTT.Core.dll
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\Cuenta.Core\bin\Debug\net6.0\CuentaNTT.Core.pdb
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\Cuenta.Core\obj\Debug\net6.0\CuentaNTT.Core.dll
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\Cuenta.Core\obj\Debug\net6.0\refint\CuentaNTT.Core.dll
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\Cuenta.Core\obj\Debug\net6.0\CuentaNTT.Core.pdb
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\Cuenta.Core\obj\Debug\net6.0\ref\CuentaNTT.Core.dll

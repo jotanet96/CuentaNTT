@@ -1,0 +1,17 @@
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\CuentaNTT.Repository\obj\Debug\net6.0\CuentaNTT.Repository.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\CuentaNTT.Repository\obj\Debug\net6.0\CuentaNTT.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\CuentaNTT.Repository\obj\Debug\net6.0\CuentaNTT.Repository.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\CuentaNTT.Repository\obj\Debug\net6.0\CuentaNTT.Repository.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\CuentaNTT.Repository\obj\Debug\net6.0\CuentaNTT.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\CuentaNTT.Repository\bin\Debug\net6.0\CuentaNTT.Repository.deps.json
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\CuentaNTT.Repository\bin\Debug\net6.0\CuentaNTT.Repository.runtimeconfig.json
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\CuentaNTT.Repository\bin\Debug\net6.0\CuentaNTT.Repository.dll
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\CuentaNTT.Repository\bin\Debug\net6.0\CuentaNTT.Repository.pdb
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\CuentaNTT.Repository\bin\Debug\net6.0\CuentaNTT.Core.dll
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\CuentaNTT.Repository\bin\Debug\net6.0\CuentaNTT.Core.pdb
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\CuentaNTT.Repository\obj\Debug\net6.0\CuentaNTT.Repository.csproj.CopyComplete
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\CuentaNTT.Repository\obj\Debug\net6.0\CuentaNTT.Repository.dll
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\CuentaNTT.Repository\obj\Debug\net6.0\refint\CuentaNTT.Repository.dll
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\CuentaNTT.Repository\obj\Debug\net6.0\CuentaNTT.Repository.pdb
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\CuentaNTT.Repository\obj\Debug\net6.0\CuentaNTT.Repository.genruntimeconfig.cache
+C:\Users\Usuario\Desktop\NTT DATA\CuentaNTT\CuentaNTT.API\CuentaNTT.Repository\obj\Debug\net6.0\ref\CuentaNTT.Repository.dll

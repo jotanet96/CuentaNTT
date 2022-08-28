@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "aPVhxQrbMHaPqoW0urkpWezE2iQEiFVJaWMWNhhT8QU=",
+  "Source": "CuentaNTT.API",
+  "BasePath": "_content/CuentaNTT.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
