@@ -1,1 +1,7 @@
 
+Para iniciar el proyecto en Docker se requieren los siguientes Comandos en la ruta:
+
+Ruta: {Ruta_de_descarga}\CuentaNTT\CuentaNTT.API
+
+- docker build -f .\CuentaNTT.API\Dockerfile -t cuentantt .
+- docker run -it -p 80:80 -d cuentantt
