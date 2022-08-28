@@ -2624,7 +2624,12 @@
 			"type": "string"
 		},
 		{
-			"key": "localUrl",
+			"key": "localhost",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "dockerhost",
 			"value": "",
 			"type": "string"
 		}
